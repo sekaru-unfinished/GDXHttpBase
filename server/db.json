@@ -1,5 +1,53 @@
 {
   "lobbies": [],
-  "users": [],
-  "places": []
+  "users": [
+    {
+      "name": "tudor",
+      "colour": "#F7C3F5"
+    },
+    {
+      "name": "sad",
+      "colour": "#FCAFD1"
+    },
+    {
+      "name": "rod",
+      "colour": "#A501E4"
+    },
+    {
+      "name": "pls",
+      "colour": "#992A2C"
+    },
+    {
+      "name": "tudor",
+      "colour": "#7D491D"
+    },
+    {
+      "name": "tue",
+      "colour": "#69B57E"
+    },
+    {
+      "name": "tue",
+      "colour": "#C6439C"
+    },
+    {
+      "name": "tudor",
+      "colour": "#FD932B"
+    },
+    {
+      "name": "tudor"
+    },
+    {
+      "name": "tes"
+    },
+    {
+      "name": "das"
+    },
+    {
+      "name": "sdf"
+    },
+    {
+      "name": "dsf"
+    }
+  ],
+  "map": {}
 }

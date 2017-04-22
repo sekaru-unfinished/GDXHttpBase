@@ -14,9 +14,21 @@ var server = app.listen(3000, function () {
 
 // set defaults
 var db = low('db.json');
-db.defaults({ lobbies: [], users: [], places: [] }) 
-  .write()
+db.defaults({ users: [], map: {} }) 
+  .write();
 
-app.get('/', function (req, res) {
-  
+app.post('/user', function (req, res) {
+  // TODO duplicates
+  // db.get('users')
+  //   .push({name: req.body.name.value})
+  //   .write();
+
+  console.log("Added user: " + req.body.name.value);
+
+  var ip = req.headers['x-forwarded-for'] || 
+           req.connection.remoteAddress || 
+           req.socket.remoteAddress ||
+           req.connection.socket.remoteAddress;
+
+  res.json({head: "login_accept", name: req.body.name.value, ip: ip});
 });
